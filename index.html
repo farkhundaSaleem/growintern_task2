@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Portfolio Website</title>
+    <style>
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+
+        .navbar {
+         
+          
+            background-color: #007bff;
+            color: #ffffff;
+     
+        }
+a:hover
+{
+    color: #007bff !important; 
+    text-decoration: none;
+}
+  
+.navbar-brand {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .navbar-nav .nav-item {
+            margin: 0 20px;
+        }
+
+        .section {
+            padding: 150px 0;
+            text-align: center;
+        }
+
+       
+
+        .section p {
+            line-height: 200%;
+            width: 50%;
+            margin-left: 25%;
+        }
+
+        .about-me-image {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 30px;
+        }
+
+        .project {
+            transition: transform 0.3s ease;
+            background-color: #ffffff;
+            padding: 20px;
+            margin: 20px 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border:2px solid  #343a40;
+        }
+
+        .project:hover {
+            transform: scale(1.05);
+            color: #007bff;
+        }
+
+        .project .card-img-top {
+            height: 200px;
+            object-fit: cover;
+           
+         
+        }
+
+        .project-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+       
+        }
+
+        .col-lg-4,
+        .col-md-6 {
+            flex: 0 0 45%;
+        }
+
+        .skill-container {
+            display: inline-block;
+            margin: 20px;
+            font-size: 24px;
+            transition: transform 0.3s ease;
+        
+        }
+
+        .skill-container:hover {
+            transform: scale(1.2);
+            color: #007bff !important;
+        }
+        .ico{
+            font-size: xx-large;
+        }
+.ico a:hover{
+    color: #007bff !important;
+}
+        .contact-info {
+            margin-top: 30px;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: #ffffff;
+            text-align: center;
+            padding: 15px 0;
+        }
+        @media (max-width: 767px) {
+    body {
+        padding-top: 0px; /* Adjust the top padding for fixed navbar */
+    }
+  
+
+    .navbar {
+        padding: 0 15px;
+    
+    }
+    .aboutt{
+    
+margin-bottom: 0% !important;
+    }
+ul li a{
+    font-size: x-small !important;
+}
+    .navbar-brand {
+        font-size: 24px;
+   
+    }
+nav h1{
+    font-size: xx-large;
+}
+    .navbar-nav .nav-item {
+        margin: 0 10px;
+   
+    }
+
+    .section {
+        padding: 80px 0;
+    }
+
+    .section p {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .about-me-image {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 15px;
+    }
+
+    .project .card-img-top {
+        height: 130px;
+        margin-left: 30px;
+    }
+
+    .project {
+        margin: 10px;
+        width: 250px;
+      
+    }
+    section img{
+     
+        margin: 25% !important;
+        width: 100px !important;
+
+    }
+
+    .skill-container {
+        font-size: 18px;
+        margin: 10px;
+    }
+
+    .social-icons a {
+        font-size: 24px;
+        margin: 0 10px;
+    }
+}
+
+/* Additional styles for smaller screens can be added as needed */
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container nabv
+            x">
+                <h1 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-weight: 200;">Farkhunda Saleem</h1>
+                <h5>Front-End Web Developer</h5>
+                <ul>
+                    <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+                    <li><a href="#projects"><i class="fas fa-briefcase"></i> Projects</a></li>
+                    <li><a href="#skills"><i class="fas fa-code"></i> Skills</a></li>
+                    <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section id="about" class="section">
+        <div class="container">
+            <h1 class="aboutt" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 30px; font-weight: 600; margin-bottom: 70px; margin-top: 80px;">About Me</h1>
+            <img src="./Screenshot 2023-08-25 154634.jpg" alt="Your Name" class="about-me-image">
+            <p class="lead">Enthusiastic computer science fresher with a passion for web development. Seeking challenging
+                opportunities to contribute to innovative projects and enhance my skills.</p>
+        </div>
+    </section>
+    <section id="projects" class="section bg-light">
+        <div class="container">
+            <h1   style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 50px; font-weight: 600; margin-bottom: 100px;">Projects</h1>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card project">
+                        <img src="./Various-QR-code-types-to-choose-from-on-Fotors-QR-code-generator.webp"
+                            alt="Project 1" class="card-img-top project-image">
+                        <div class="card-body">
+                            <h3 class="card-title">QR Generator</h3>
+                       
+                            <a href="https://farkhundasaleem.github.io/QR-Code-Generator/" class="btn btn-primary" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card project">
+                        <img src="./weather-app.png" alt="Project 2" class="card-img-top project-image" style="width: 200px; margin-left: 50px;">
+                        <div class="card-body">
+                            <h3 class="card-title">Weather App</h3>
+                  
+                            <a href="https://farkhundasaleem.github.io/Weather-App/" class="btn btn-primary"
+                                target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card project">
+                        <img src="./button.png" alt="Project 3" class="card-img-top project-image" style="width: 200px; margin-left: 50px;">
+                        <div class="card-body">
+                            <h3 class="card-title">Dark Mode React</h3>
+                            
+                            <a href="https://startling-monstera-5180e2.netlify.app/" class="btn btn-primary"
+                                target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card project">
+                        <img src="./articles.png" alt="Project 4" class="card-img-top project-image" style="width: 200px; margin-left: 50px;">
+                        <div class="card-body">
+                            <h3 class="card-title">Blogging App</h3>
+                          
+                            <a href="https://mellow-blini-aa25d5.netlify.app/" class="btn btn-primary"
+                                target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card project">
+                        <img src="./coffee-cup.png" alt="Project 5" class="card-img-top project-image" style="width: 200px; margin-left: 50px;">
+                        <div class="card-body">
+                            <h3 class="card-title">Landing Page</h3>
+                           
+                            <a href="https://heartfelt-puppy-dc5e3c.netlify.app/" class="btn btn-primary"
+                                target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card project">
+                        <img src="./digital-clock-midnight.png" alt="Project 6" class="card-img-top project-image" style="width: 200px; margin-left: 50px;">
+                        <div class="card-body">
+                            <h3 class="card-title">Digital Clock</h3>
+                        
+                            <a href="https://farkhundasaleem.github.io/Digital-Clock/" class="btn btn-primary"
+                                target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card project">
+                        <img src="./mobile-app.png" alt="Project 7" class="card-img-top project-image" style="width: 200px; margin-left: 50px;">
+                        <div class="card-body">
+                            <h3 class="card-title">ToDo App</h3>
+                         
+                            <a href="https://verdant-fox-ff77d2.netlify.app" class="btn btn-primary"
+                                target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card project">
+                        <img src="./download.png" alt="Project 7" class="card-img-top project-image" style="width: 200px; margin-left: 50px;">
+                        <div class="card-body">
+                            <h3 class="card-title">Quiz App</h3>
+                         
+                            <a href="https://farkhundasaleem.github.io/Quiz-App-SMIT-/" class="btn btn-primary"
+                                target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="skills" class="section">
+        <div class="container">
+            <h1 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 50px; font-weight: 600; margin-bottom: 100px;">Skills</h1>
+            <div class="skill-container">
+                <i class="fab fa-html5"></i> HTML
+            </div>
+            <div class="skill-container">
+                <i class="fab fa-css3-alt"></i> CSS
+            </div>
+            <div class="skill-container">
+                <i class="fab fa-js"></i> JavaScript
+            </div>
+            <div class="skill-container">
+                <i class="fab fa-react"></i> React
+            </div>
+            <div class="skill-container">
+                <i class="fab fa-bootstrap"></i> Bootstrap
+            </div>
+            <div class="skill-container">
+                <i class="fa-solid fa-m"></i> Material UI
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="section">
+        <div class="container">
+            <h1 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 50px; font-weight: 600; margin-bottom: 100px; color: #007bff;">Contact Me</h1>
+            <div class="contact-info">
+                <h4>Email: farkhunda2108@gmail.com</h4>
+                <h4>Phone: +923361267987</h4>
+            </div>
+            <div class="social-icons ico">
+                <a href="https://www.linkedin.com/in/farkhunda-saleem/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/farkhundasaleem"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> farkhunda-saleem. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+    <script src="animate.js"></script>
+    <script src="script.js"></script>
+  
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
